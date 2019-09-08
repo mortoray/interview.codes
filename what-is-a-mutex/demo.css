@@ -1,0 +1,35 @@
+#threads > div {
+	display: inline-block;
+}
+
+div.thread {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.thread .img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -100;
+}
+
+div.thread button {
+}
+
+.idle .img {
+	background-image: url('icon-idle.svg');
+}
+.wait .img {
+	background-image: url('icon-wait.svg');
+}
+.locked .img {
+	background-image: url('icon-locked.svg');
+}
