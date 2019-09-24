@@ -83,7 +83,7 @@ def upper_bound( value : ComparableT, items : Sequence[ComparableT] ) -> int:
 			hi = mid
 		
 		else:
-			# continue in rights side, add one since the lower_bound is strictly after `mid`
+			# continue in right side, add one since the upper_bound is strictly after `mid`
 			lo = mid + 1
 	
 	return lo
