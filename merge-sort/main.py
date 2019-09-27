@@ -27,7 +27,7 @@ def merge_sort( items : List[ComparableT] ) -> List[ComparableT]:
 	back = merge_sort( items[mid:] )
 	
 	# Recombine
-	out : List[T] = []
+	out : List[ComparableT] = []
 	fore_at = 0
 	back_at = 0
 	while fore_at < len(fore) or back_at < len(back):
