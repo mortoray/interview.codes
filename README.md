@@ -1,8 +1,8 @@
 # Interview.Codes Classes
 
-Code for courses offered by [Interview.Codes](https://interview.codes/).
+On my site [Interview.Codes](https://interview.codes/), I offer several courses for interview preparation. As part of the course I provide sample implementations to the algorithsm discussed. That code is stored here.
 
-You can find the courses on my [SkillShare profile](https://www.skillshare.com/r/profile/Edaqa-Mortoray/8551496).
+You can take all of my courses on [SkillShare profile](https://www.skillshare.com/r/profile/Edaqa-Mortoray/8551496).
 
 
 # Python Virtual Environment
