@@ -3,7 +3,7 @@ import unicodedata
 
 # Unfortunately grapheme clusters are not part of the standard Python library yet
 # This library refers to grapheme cluster groups as graphemes
-import grapheme
+import grapheme #type: ignore
 
 
 """
@@ -85,7 +85,7 @@ def test_main():
 	assert are_anagrams( "Eats", "Seat" )
 	
 	# ignores spaces
-	assert are_anagrams( "I like Python", "The Pinky Oil" )
+	assert are_anagrams( "Big Bad Snake", "Beanbag Kids" )
 	
 	# negatives
 	assert not are_anagrams( "AAAbb", "aaab" )
@@ -110,9 +110,9 @@ def test_unicode():
 	
 
 def test_emoji():
-	assert are_anagrams( "☺️☹️", "☺️☹️" )
-	assert are_anagrams_unicode( "☺️☹️", "☺️☹️" )
-	assert are_anagrams_base( "☺️☹️", "☺️☹️" )
+	assert are_anagrams( "☺️☹️", "☹️☺️" )
+	assert are_anagrams_unicode( "☺️☹️", "☹️☺️" )
+	assert are_anagrams_base( "☺️☹️", "☹️☺️" )
 
 	assert not are_anagrams_base( "☺️", "☹️" )
 	
@@ -124,4 +124,7 @@ def test_emoji():
 	assert are_anagrams_base( light_hand, dark_hand )
 
 
-test_emoji()
+test_main()
+#test_unicode()
+#test_emoji()
+
